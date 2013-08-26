@@ -1,6 +1,6 @@
 # Ascii::Snapper
 
-TODO: Write a gem description
+Converts encoding of ASCII-8BIT POST data to UTF-8.
 
 ## Installation
 
@@ -18,7 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+If you're using Rails, that's it. You haven't to do anything more. If you're not using Rails, you will have to add to your config.ru:
+
+```
+require 'ascii-snapper'
+
+use AsciiSnapper::Middleware
+```
+
+
 
 ## Contributing
 
